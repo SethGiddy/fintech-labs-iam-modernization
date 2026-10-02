@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-09-24T02:14:05Z",
+  "identity_type": "IAM Role",
+  "principal": "arn:aws:iam::123456789:role/DevOps-Deployment-Role",
+  "source_ip": "198.51.100.42",
+  "action": "rds:DownloadDBClusterSnapshot",
+  "status": "SUCCESS"
+}

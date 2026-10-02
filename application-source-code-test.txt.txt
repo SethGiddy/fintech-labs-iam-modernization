@@ -1,0 +1,51 @@
+CCNA NOTE
+
+Secure management access to a switch.
+1. Assign a device name.
+Switch# configure terminal
+Switch(config)# hostname Sw-Floor-1
+Sw-Floor-1(config)#
+
+2. Secure user EXEC mode access.
+Sw-Floor-1# configure terminal
+Sw-Floor-1(config)# line console 0
+Sw-Floor-1(config-line)# password cisco
+Sw-Floor-1(config-line)# login
+Sw-Floor-1(config-line)# end
+Sw-Floor-1#
+
+3. Encrypt all plaintext passwords.
+Sw-Floor-1# configure terminal
+Sw-Floor-1(config)# enable secret class
+Sw-Floor-1(config)# exit
+Sw-Floor-1#
+
+
+4. Secure VTY access.
+Sw-Floor-1# configure terminal
+Sw-Floor-1(config)# line vty 0 15
+Sw-Floor-1(config-line)# password cisco
+Sw-Floor-1(config-line)# login
+Sw-Floor-1(config-line)# end
+Sw-Floor-1#
+
+5. Encrypt Passwords
+Sw-Floor-1# configure terminal
+Sw-Floor-1(config)# service password-encryption
+Sw-Floor-1(config)#
+
+5. Display a login banner.
+Sw-Floor-1# configure terminal
+Sw-Floor-1(config)# banner motd #Authorized Access Only#
+
+
+ Switch Virtual Interface Configuration
+This is to configure a switch. virtual switch
+config t (global configuration command)
+use the interface vlan 1 .(vlan interface)
+configure ip address for vlan 1  ip address ip-address subnet-mask
+enable the virtual interface using the no shutdown 
+exit
+configure ip gateway with  ip default-gateway ip-address
+
+
