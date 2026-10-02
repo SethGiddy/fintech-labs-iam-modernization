@@ -1,0 +1,7 @@
+## Executive Summary
+
+FinTech Labs’ traditional Castle-and-Moat security model is no longer sufficient because our infrastructure, applications, employees, and workloads increasingly operate across cloud environments, remote networks, and third-party services. A network firewall can control traffic at a network boundary, but it cannot reliably determine whether an authenticated user, application, or workload should access a particular resource. If an attacker obtains valid credentials, simply being able to reach the internal network may provide opportunities to access sensitive systems.
+
+Moving to an identity-centric Zero Trust model makes identity and authorization central to every access decision. Instead of automatically trusting users or systems based on their network location, every access request should be explicitly authenticated, evaluated, and authorized according to identity, resource, context, and policy. Multi-factor authentication, least-privilege access, role-based access controls, workload identities, and continuous monitoring further reduce the potential impact of compromised credentials.
+
+For FinTech Labs, this approach directly addresses the risks identified during our IAM review. Access to customer financial data and administrative systems can be restricted according to legitimate business responsibilities, while detailed audit trails improve accountability. Identity becomes a critical security perimeter alongside network controls, helping reduce unauthorized access and limit the blast radius of security incidents.
