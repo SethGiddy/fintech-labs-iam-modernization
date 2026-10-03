@@ -14,6 +14,28 @@ This project applies Week 1 identity and access management concepts to that scen
 - Explain why network location alone is not a trustworthy basis for access.
 - Create and test basic AWS IAM policies attached to groups.
 
+## Learning Outcomes
+
+After completing this project, I can:
+
+- Distinguish workforce, customer, and workload identities and explain the security impact of compromising each type.
+- Translate job responsibilities into a resource access matrix using `None`, `Read`, and `Read/Write` permissions.
+- Apply least privilege and separation of duties to keep software development, production data administration, and cloud administration responsibilities distinct.
+- Create AWS IAM policies scoped to specific S3 buckets, assign policies through groups, and verify expected allow and deny outcomes with test users.
+- Interpret a CloudTrail-style event using AAA concepts, identify unusual activity, and explain what additional evidence is needed before attributing an action to a person or workload.
+- Describe how identity-centric Zero Trust controls complement network security and reduce the impact of compromised credentials.
+
+## Skills Learned
+
+- **Identity governance:** identity classification, role and responsibility mapping, and compromise-risk assessment.
+- **Access control design:** RBAC, least-privilege policy scoping, implicit deny behavior, and separation-of-duties analysis.
+- **AWS IAM and S3:** creating customer-managed IAM policies, groups, and test users; granting bucket-level and object-level access; and validating permissions in the AWS console.
+- **Access testing and documentation:** recording expected versus actual results, capturing evidence, and troubleshooting unexpected access by reviewing attached policies and group membership.
+- **Cloud audit analysis:** reading event fields such as principal, action, timestamp, source IP, and status; separating confirmed facts from assumptions; and identifying useful follow-up evidence.
+- **Zero Trust communication:** explaining identity-based access decisions and security recommendations to both technical teams and executive stakeholders.
+
+The AWS exercise is a foundational simulation. It tests S3 access boundaries and does not implement production database permissions, federated workforce access, or the complete access matrix.
+
 ## Project Contents
 
 | Part | Contents |
